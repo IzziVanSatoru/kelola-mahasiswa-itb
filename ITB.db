@@ -1,0 +1,31 @@
+CREATE DATABASE ITB;
+USE ITB;
+
+CREATE TABLE mahasiswa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    nim VARCHAR(15) NOT NULL UNIQUE,
+    jurusan VARCHAR(50) NOT NULL
+);
+
+INSERT INTO mahasiswa (nama, nim, jurusan) VALUES
+('Ahmad Fauzan', '13521001', 'Informatika'),
+('Dinda Permata', '13521002', 'Sistem Informasi'),
+('Rizky Ramadhan', '13521003', 'Teknik Elektro'),
+('Siti Aisyah', '13521004', 'Teknik Industri'),
+('Fajar Prasetyo', '13521005', 'Teknik Mesin'),
+('Hafizh Alfarizi', '13521006', 'Teknik Sipil'),
+('Putri Amelia', '13521007', 'Arsitektur'),
+('Gilang Setiawan', '13521008', 'Matematika'),
+('Aulia Rahman', '13521009', 'Fisika'),
+('Zahra Hanifah', '13521010', 'Kimia'),
+('Budi Santoso', '13521011', 'Statistika'),
+('Nadia Kusuma', '13521012', 'Teknik Kimia'),
+('Dian Suryadi', '13521013', 'Teknik Lingkungan'),
+('Hendra Wijaya', '13521014', 'Manajemen Rekayasa'),
+('Nina Safitri', '13521015', 'Desain Komunikasi Visual'),
+('Arif Budiman', '13521016', 'Teknik Geologi'),
+('Rahmat Hidayat', '13521017', 'Teknik Perminyakan'),
+('Dewi Lestari', '13521018', 'Teknik Pangan'),
+('Faisal Ramadhan', '13521019', 'Bioteknologi'),
+('Maya Anindita', '13521020', 'Teknik Material');
